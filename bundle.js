@@ -197,8 +197,8 @@
       return (len += d.children.length);
     });
 
-    var s = dataOption.find(function (d) { return d.name === selectedData; });
-    console.log(s);
+    var title = dataOption.find(function (d) { return d.name === selectedData; });
+
     var a = [];
     var c = function () {
       root.leaves().map(function (d) {
@@ -229,19 +229,17 @@
     var onMouseEnter = function (d) {
       var n = d.data.name;
       var c = d.data.category;
-      var v = d.data.value + " " + (dataOption.find(function (d) { return d.name === selectedData; }).unit);
+      var v = d.data.value + " " + (title.unit);
       setTool([n, c, v]);
     };
-    var onMouseOut = function (d) {
+    var onMouseOut = function () {
       tooldiv.style("opacity", 0);
     };
     return (
       React.createElement( React.Fragment, null,
         React.createElement( 'div', { id: "title" },
-          React.createElement( 'h1', null, root.data.name ),
-          React.createElement( 'p', { id: "description" },
-            ("Top " + len + " " + selectedData + " grouped by " + (dataOption.find(function (d) { return d.name === selectedData; }).genre))
-          ),
+          React.createElement( 'h1', null, title.name ),
+          React.createElement( 'p', { id: "description" }, ("Top " + len + " " + selectedData + " grouped by " + (title.genre))),
           React.createElement( Dropdown, {
             dataOption: dataOption, selectedData: selectedData, setSelectedData: setSelectedData, id: "data-select" })
         ),

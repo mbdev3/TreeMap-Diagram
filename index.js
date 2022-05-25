@@ -80,8 +80,8 @@ const App = () => {
     return (len += d.children.length);
   });
 
-  let s = dataOption.find((d) => d.name === selectedData);
-  console.log(s);
+  let title = dataOption.find((d) => d.name === selectedData);
+
   let a = [];
   const c = () => {
     root.leaves().map((d) => {
@@ -110,19 +110,17 @@ const App = () => {
   const onMouseEnter = (d) => {
     let n = d.data.name;
     let c = d.data.category;
-    let v = d.data.value + ` ${dataOption.find((d) => d.name === selectedData).unit}`;
+    let v = d.data.value + ` ${title.unit}`;
     setTool([n, c, v]);
   };
-  const onMouseOut = (d) => {
+  const onMouseOut = () => {
     tooldiv.style("opacity", 0);
   };
   return (
     <>
       <div id="title">
-        <h1>{root.data.name}</h1>
-        <p id="description">
-          {`Top ${len} ${selectedData} grouped by ${dataOption.find((d) => d.name === selectedData).genre}`}
-        </p>
+        <h1>{title.name}</h1>
+        <p id="description">{`Top ${len} ${selectedData} grouped by ${title.genre}`}</p>
         <Dropdown
           dataOption={dataOption}
           selectedData={selectedData}
