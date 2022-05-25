@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  overflow: auto;
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+pre {
+  font-size: 7em;
+}
+
+
+.tooldiv {
+  position: absolute;
+  background-color: rgba(99, 95, 93, 0.3);
+  background-color: hsla(0, 0%, 100%, 0.8);
+
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #495057;
+  opacity: 0;
+
+  padding: 10px;
+
+  border: 1px solid #635f5d;
+}
+
+.tooldiv span {
+  color: blue;
+}
+
+#title {
+  margin: 1rem 0;
+}
+
+#title h1 {
+  font-size: 1.75em;
+  text-align: center;
+  color: #413f3e;
+  margin: 0;
+  margin-top: 1rem;
+  letter-spacing: 2px;
+}
+
+#title p {
+  font-size: 1.2em;
+  text-align: center;
+  color: #635f5d;
+  margin: 0;
+}
+
+text {
+  cursor: default;
+}
+
+
+
+.mark text {
+  font-size: 0.75em;
+  color: #413f3e;
+  font-weight: 700;
+  cursor: default;
+
+}
+
+tspan {
+  cursor: default;
+  color: red;
+}
+
+
+#legend text {
+  font-size: 0.7em;
+}
+
+select,
+option {
+  font-size: 1em;
+  padding: 0.5rem;
+  font-family: "Nunito", sans-serif;
+}
+
+
+.copyright {
+  opacity: 0.75;
+  transition: opacity 0.75s ease;
+}
+
+.copyright:hover {
+  opacity: 1;
+}
+
+
+
+@keyframes colorful {
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    mix-blend-mode: difference;
+    opacity: 0;
+  }
+
+  100% {
+    mix-blend-mode: normal;
+    opacity: 1;
+  }
+}
+
+.tile {
+
+
+  transition: all 1s ease;
+
+}
