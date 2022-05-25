@@ -1,10 +1,10 @@
-# Video Game Sales - TreeMap Diagram
+# TreeMap Diagram
 
 ---
 
 ### :camera: Preview:
 
-<img src="https://projects-preview.s3.eu-west-3.amazonaws.com/United+States+Educational+Attainment+mbdev.webp"    />
+<img src="https://projects-preview.s3.eu-west-3.amazonaws.com/TreeMap+Diagram.webp"    />
 
 :rocket: **Stack:** [D3](https://d3js.org/), [React](https://reactjs.org/)
 
@@ -16,6 +16,4 @@
 
 [Kickstarter Pledges Data](https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/kickstarter-funding-data.json)
 
-:pushpin: [Live Demo](https://usedumap-mbdev.netlify.app/)
-
-
+:pushpin: [Live Demo](https://treemap-mbdev.netlify.app/)
