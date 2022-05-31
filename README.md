@@ -10,10 +10,6 @@
 
 :hammer: **Module bundler:** [Rollupjs](https://rollupjs.org/guide/en/)
 
-:page_with_curl: [Video Game Sales Data](https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/video-game-sales-data.json)
-
-[Movie Sales Data](https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/movie-data.json)
-
-[Kickstarter Pledges Data](https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/kickstarter-funding-data.json)
+:page_with_curl: **Data:** [Video Game Sales Data](https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/video-game-sales-data.json) | [Movie Sales Data](https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/movie-data.json) | [Kickstarter Pledges Data](https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/kickstarter-funding-data.json)
 
 :pushpin: [Live Demo](https://treemap-mbdev.netlify.app/)
