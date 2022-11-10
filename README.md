@@ -1,8 +1,6 @@
 # TreeMap Diagram
 
----
 
-### :camera: Preview:
 
 <img src="https://projects-preview.s3.eu-west-3.amazonaws.com/TreeMap+Diagram.webp"    />
 
